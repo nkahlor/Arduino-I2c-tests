@@ -13,9 +13,9 @@ void setup() {
 
 void loop() {
   PolarCoord test_point;
-  test_point.r = 5.5;
-  test_point.theta = 67.8;
-  test_point.left = 0;
+  test_point.r = 5.7;
+  test_point.theta = 67.22;
+  test_point.left = 1;
   
   prepareToSend(test_point);
   
@@ -34,6 +34,7 @@ void requestCoordEvent()
     Wire.write(FAILED_TO_SEND);
   }
 }
+
 void prepareToSend(PolarCoord new_coord)
 {
   coord_to_send = new_coord;
